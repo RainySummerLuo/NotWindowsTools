@@ -4,6 +4,9 @@
 ## WinRun
 模仿`[Win + R]`Run程序
 
+### Ver 1.2
+![ver1.1](https://github.com/RainySummerLuo/NotWindowsTools/blob/master/screenshot/WinRun_v1.2.png)
+
 ### Ver 1.1
 ![ver1.1](https://github.com/RainySummerLuo/NotWindowsTools/blob/master/screenshot/WinRun_v1.1.png)
 

@@ -14,8 +14,10 @@ namespace WinRun {
             Color rectColor = Color.FromArgb(240, 240, 240);
             Rectangle rect = new Rectangle(0, rectY, Width, Height - rectY);
             Brush rectBrush = new SolidBrush(rectColor);
+            Pen linePen = new Pen(rectColor);
             Graphics g = this.CreateGraphics();
             g.Clear(BackColor);
+            g.DrawLine(linePen, new Point(0, 0), new Point(Width, 0));
             g.FillRectangle(rectBrush, rect);
 
             comboBox1.SelectedIndex = -1;
@@ -56,6 +58,10 @@ namespace WinRun {
                 file = dialog.FileName;
             }
             comboBox1.Text = file;
+        }
+
+        private void Form1_Load(object sender, EventArgs e) {
+
         }
     }
 }

@@ -19,9 +19,6 @@ namespace WinRun {
             g.Clear(BackColor);
             g.DrawLine(linePen, new Point(0, 0), new Point(Width, 0));
             g.FillRectangle(rectBrush, rect);
-
-            comboBox1.SelectedIndex = -1;
-            comboBox1.Text = "";
         }
 
         private void btnOk_Click(object sender, EventArgs e) {
@@ -61,7 +58,39 @@ namespace WinRun {
         }
 
         private void Form1_Load(object sender, EventArgs e) {
+            comboBox1.Text = "";
+            btnOk.Enabled = false;
+        }
 
+        private void comboBox1_DrawItem(object sender, DrawItemEventArgs e) {
+            ComboBox combobox = sender as ComboBox;
+            SolidBrush brush = new SolidBrush(combobox.ForeColor);
+            Font font = combobox.Font;
+
+            SizeF fontSize = e.Graphics.MeasureString("cmd", combobox.Font);
+
+            // 垂直居中
+            float top = (float)(e.Bounds.Height - fontSize.Height) / 2;
+            if (top <= 0) top = 0f;
+
+            // 输出
+            e.DrawBackground();
+            e.Graphics.DrawString("cmd", font, brush, new RectangleF(
+                e.Bounds.X,    //设置X坐标偏移量
+                e.Bounds.Y + top,     //设置Y坐标偏移量
+                e.Bounds.Width, e.Bounds.Height), StringFormat.GenericDefault);
+
+            //e.Graphics.DrawString(cmb.GetItemText(cmb.Items[e.Index]), ft, myBrush, e.Bounds, StringFormat.GenericDefault);
+            e.DrawFocusRectangle();
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDown;
+        }
+
+        private void comboBox1_TextChanged(object sender, EventArgs e) {
+            if (comboBox1.Text == "") {
+                btnOk.Enabled = false;
+            } else {
+                btnOk.Enabled = true;
+            }
         }
     }
 }

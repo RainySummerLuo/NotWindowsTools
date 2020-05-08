@@ -50,6 +50,10 @@ namespace AboutWin {
 
             lblUsr.Text = usrName;
             lblOrg.Text = orgName ?? "org name";
+
+            Bitmap winlogo = new Bitmap(Properties.Resources.win10);
+            winlogo.MakeTransparent(Color.White);
+            pictureBox1.Image = winlogo;
         }
 
         private void Form1_Shown(object sender, EventArgs e) {

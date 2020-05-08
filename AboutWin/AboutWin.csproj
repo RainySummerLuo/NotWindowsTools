@@ -92,6 +92,7 @@
     <None Include="res\win10.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="res\win10.bmp" />
     <Content Include="winver.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

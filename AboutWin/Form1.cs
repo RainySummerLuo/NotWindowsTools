@@ -49,7 +49,7 @@ namespace AboutWin {
                 " operating system and its user interface are protected by trademark and other pending or existing intellectual property rights in the United States and other countries/regions.";
 
             lblUsr.Text = usrName;
-            lblOrg.Text = orgName == null ? "org name" : orgName ;
+            lblOrg.Text = orgName ?? "org name";
         }
 
         private void Form1_Shown(object sender, EventArgs e) {

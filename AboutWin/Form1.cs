@@ -65,5 +65,9 @@ namespace AboutWin {
             g.DrawLine(linePen, new Point(24, lineY), new Point(Width - 48, lineY));
             g.DrawLine(new Pen(Color.White), new Point(24, lineY + 1), new Point(Width - 48, lineY + 1));
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
     }
 }

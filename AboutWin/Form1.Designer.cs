@@ -32,6 +32,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lblUsr = new System.Windows.Forms.Label();
             this.lblOrg = new System.Windows.Forms.Label();
+            this.btnOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,11 +122,24 @@
             this.lblOrg.TabIndex = 7;
             this.lblOrg.Text = "org name";
             // 
+            // btnOk
+            // 
+            this.btnOk.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.Location = new System.Drawing.Point(568, 528);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(108, 29);
+            this.btnOk.TabIndex = 0;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
+            this.AcceptButton = this.btnOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(688, 574);
+            this.Controls.Add(this.btnOk);
             this.Controls.Add(this.lblOrg);
             this.Controls.Add(this.lblUsr);
             this.Controls.Add(this.linkLabel1);
@@ -160,6 +174,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label lblUsr;
         private System.Windows.Forms.Label lblOrg;
+        private System.Windows.Forms.Button btnOk;
     }
 }
 

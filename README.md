@@ -13,8 +13,11 @@
 ### Ver 1.0
 ![ver1.0](https://github.com/RainySummerLuo/NotWindowsTools/blob/master/screenshot/WinRun_v1.0.png)
 
-## WinRun
+## AboutWin
 模仿`[winver]`"About Windows"程序
+
+### Ver 1.1
+![ver1.1](https://github.com/RainySummerLuo/NotWindowsTools/blob/master/screenshot/AboutWin_v1.1.png)
 
 ### Ver 1.0
 ![ver1.0](https://github.com/RainySummerLuo/NotWindowsTools/blob/master/screenshot/AboutWin_v1.0.png)
@@ -26,4 +29,4 @@
 ![ver1.1](https://github.com/RainySummerLuo/NotWindowsTools/blob/master/screenshot/TaskMgr_v1.1.png)
 
 ### Ver 1.0
-![ver1.1](https://github.com/RainySummerLuo/NotWindowsTools/blob/master/screenshot/TaskMgr_v1.0.png)
+![ver1.0](https://github.com/RainySummerLuo/NotWindowsTools/blob/master/screenshot/TaskMgr_v1.0.png)
